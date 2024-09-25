@@ -19,7 +19,6 @@ int fifthMeatballY = ((int)(Math.random() * 200) * (-1)) - 297;
 int sixthMeatballY = ((int)(Math.random() * 200) * (-1)) - 457;
 
 void draw() { 
-  System.out.println(firstX);
   //Meatball
   if(meatballY > 700) {
    meatballY = 0;
