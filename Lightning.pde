@@ -19,6 +19,7 @@ int fifthMeatballY = ((int)(Math.random() * 200) * (-1)) - 297;
 int sixthMeatballY = ((int)(Math.random() * 200) * (-1)) - 457;
 
 void draw() { 
+  System.out.println(firstX);
   //Meatball
   if(meatballY > 700) {
    meatballY = 0;
@@ -42,7 +43,7 @@ void draw() {
   fill(0,0,255);
   rect(0,0,180,700);
   rect(580,0,200,700);
-  fill(84,45,45);
+  fill(145,45,45);
   ellipse(50,meatballY,40,40);
   ellipse(90,secondMeatballY,40,40);
   ellipse(130,thirdMeatballY,40,40);
@@ -91,13 +92,13 @@ void draw() {
       firstX = secondX;
       firstY = secondY;
       secondX = secondX - (int)(Math.random() * 19);
-      secondY = secondY + (int)(Math.random() * 25);
+      secondY = secondY + (int)(Math.random() * 32);
       seeThrough -= (int)(Math.random() * 2);
     } else {
       firstX = secondX;
       firstY = secondY;
       secondX = secondX + (int)(Math.random() * 19);
-      secondY = secondY + (int)(Math.random() * 25);
+      secondY = secondY + (int)(Math.random() * 32);
       seeThrough -= (int)(Math.random() * 2);
     }
     if (firstY >= 700) {
